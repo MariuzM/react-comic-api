@@ -8,6 +8,12 @@ Retrieving data from an API
 npm install
 ```
 
+### Running the App in LocalHost
+
+```
+npm start
+```
+
 There is an issue with CORS so use this Chrome exstension https://chrome.google.com/webstore/detail/moesif-orign-cors-changer/digfbfaphojjndkpccljibejjbppifbc
 
 ## Built With
