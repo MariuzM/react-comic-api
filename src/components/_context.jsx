@@ -28,7 +28,6 @@ export const ApiProvider = ({ children }) => {
       .then(() => {
         setLoader(prev => ({ ...prev, loading: false }))
       })
-    // setLoader(prev => ({ ...prev, loading: false }))
   }, [])
 
   const handleChange = e => setInputState(e.target.value)
@@ -39,13 +38,6 @@ export const ApiProvider = ({ children }) => {
     axios.get(tempLink).then(res => setLoader({ data: res.data, loading: false }))
     e.preventDefault()
   }
-
-  // function test() {
-  //   setTimeout(function() {
-  //     console.log(loader)
-  //   }, 500)
-  // }
-  // test()
 
   return (
     <ApiContext.Provider
