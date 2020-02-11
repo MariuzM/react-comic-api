@@ -1,7 +1,5 @@
 .cache
 .DS_Store
-.eslintrc
-.prettierrc
 resource
 node_modules
 dist
