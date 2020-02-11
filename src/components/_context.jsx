@@ -22,12 +22,8 @@ export const ApiProvider = ({ children }) => {
   useEffect(() => {
     axios
       .get('https://xkcd.com/info.0.json')
-      .then(res => {
-        setLoader({ data: res.data })
-      })
-      .then(() => {
-        setLoader(prev => ({ ...prev, loading: false }))
-      })
+      .then(res => setLoader({ data: res.data }))
+      .then(() => setLoader(prev => ({ ...prev, loading: false })))
   }, [])
 
   const handleChange = e => setInputState(e.target.value)
