@@ -6,7 +6,6 @@ import PageOne from './views/PageOne'
 import PageTwo from './views/PageTwo'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.scss'
 
 export default function App() {
   return (
