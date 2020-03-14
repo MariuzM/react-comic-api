@@ -21,9 +21,10 @@ export const ApiProvider = ({ children }) => {
 
   useEffect(() => {
     axios
-      .get('https://xkcd.com/info.0.json')
+      .get('https://xkcd.com/info.0.json', { crossdomain: true })
       .then(res => setLoader({ data: res.data }))
       .then(() => setLoader(prev => ({ ...prev, loading: false })))
+      .catch(err => console.log('test', err.request))
   }, [])
 
   const handleChange = e => setInputState(e.target.value)
